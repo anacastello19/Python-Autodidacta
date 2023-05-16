@@ -25,8 +25,12 @@ class Perro:
         print(f"{self.nombre} ahora tiene {self.edad} años")
 
     #Getter/Setter
+    def set_nombre(self, nombre):
+        self.nombre = nombre
+
     def set_edad(self, edad):
         self.edad=edad
+        
         print(f'{self.nombre} ahora tiene {self.edad}')
     def mostrar_detalles(self):
         print(f'Mi perro se llama {self.nombre}, su tamaño es {self.tamaño}, tiene {self.edad} años, tiene un color {self.color} y su raza es {self.raza}')
@@ -40,3 +44,6 @@ miPerro.jugar()
 miPerro.cumple()
 miPerro.hambre(True)
 miPerro.set_edad(20)
+miPerro.set_nombre('Rocco')
+miPerro.set_edad(9)
+miPerro.mostrar_detalles()
